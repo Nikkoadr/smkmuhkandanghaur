@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('website.home');
 });
+Route::get('program', function () {
+    return view('website.program');
+});
+Route::get('fasilitas', function () {
+    return view('website.fasilitas');
+});
+Route::get('ekstrakurikuler', function () {
+    return view('website.ekstrakurikuler');
+});
+Route::get('berita', function () {
+    return view('website.berita');
+});
+Route::get('kontak', function () {
+    return view('website.kontak');
+});

@@ -186,7 +186,7 @@
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 <div class="team-item bg-light rounded overflow-hidden">
                     <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="{{ asset('assets/website/img/tpfl.JPG') }}" alt="">
+                        <img class="img-fluid w-100" src="{{ asset('assets/website/img/program/tpfl.JPG') }}" alt="">
                     </div>
                     <div class="text-center py-4">
                         <h4 class="text-primary">TPFL</h4>
@@ -197,7 +197,7 @@
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 <div class="team-item bg-light rounded overflow-hidden">
                     <div class="team-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="{{ asset('assets/website/img/tkro.JPG')}}" alt="">
+                        <img class="img-fluid w-100" src="{{ asset('assets/website/img/program/tkro.JPG')}}" alt="">
                     </div>
                     <div class="text-center py-4">
                         <h4 class="text-primary">TKRO</h4>

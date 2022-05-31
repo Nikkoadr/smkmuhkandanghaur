@@ -11,22 +11,22 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav ms-auto py-0">
             <li class="nav-item">
-                <a class="nav-link active" href="#">HOME</a>
+                <a class="nav-link" href="/">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="program.html">PROGRAM</a>
+                <a class="nav-link" href="program">PROGRAM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="fasilitas.html">FASILITAS</a>
+                <a class="nav-link" href="fasilitas">FASILITAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ekstrakurikuler.html">EKSTRAKURIKULER</a>
+                <a class="nav-link" href="ekstrakurikuler">EKSTRAKURIKULER</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="berita.html">BERITA</a>
+                <a class="nav-link" href="berita">BERITA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="kontak.html">KONTAK</a>
+                <a class="nav-link" href="kontak">KONTAK</a>
             </li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PPDB</a>
