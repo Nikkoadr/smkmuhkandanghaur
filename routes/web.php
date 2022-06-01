@@ -14,20 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('website.home');
+    return view('website.home', ["url" => "home"]);
 });
 Route::get('program', function () {
-    return view('website.program');
+    return view('website.program', ["url" => "program"]);
 });
 Route::get('fasilitas', function () {
-    return view('website.fasilitas');
+    return view('website.fasilitas', ["url" => "fasilitas"]);
 });
 Route::get('ekstrakurikuler', function () {
-    return view('website.ekstrakurikuler');
+    return view('website.ekstrakurikuler', ["url" => "ekstrakurikuler"]);
 });
 Route::get('berita', function () {
-    return view('website.berita');
+    return view('website.berita', ["url" => "berita"]);
 });
 Route::get('kontak', function () {
-    return view('website.kontak');
+    return view('website.kontak', ["url" => "kontak"]);
 });
