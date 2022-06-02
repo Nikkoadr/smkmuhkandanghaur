@@ -299,7 +299,7 @@
                     </div>
                     <div class="text-center py-4">
                         <h4 class="text-primary"><a href="ekstrakurikuler.html">KLIK DISINI</a></h4>
-                        <p class="text-uppercase m-0">untuk melihat lebih banyak program keahlian</p>
+                        <p class="text-uppercase m-0">untuk melihat lebih banyak Ekstrakurikuler</p>
                     </div>
                 </div>
             </div>

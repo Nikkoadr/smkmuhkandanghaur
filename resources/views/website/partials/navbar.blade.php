@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
     <div class="grup">
-        <a href="index.html" class="navbar-brand p-0">
+        <a href="/" class="navbar-brand p-0">
             <img style="width: 13%;" src="{{ asset('assets/website/img/logo.png') }}" alt="">
         </a>
         <button style="float: right; margin-top:2%;"  class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
