@@ -29,17 +29,17 @@
                 <a class="nav-link {{ $url === "kontak" ? 'active' : '' }}" href="kontak">KONTAK</a>
             </li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PPDB</a>
+                <a href="#" class="nav-link dropdown-toggle {{ $url === "cek_data_ppdb" ? 'active' : '' }} {{ $url === "form_ppdb" ? 'active' : '' }}" data-bs-toggle="dropdown">PPDB</a>
                 <div class="dropdown-menu m-0">
-                    <a href="#" class="dropdown-item">FORM PPDB</a>
-                    <a href="#" class="dropdown-item">CEK DATA PPDB</a>
+                    <a href="form_ppdb" class="dropdown-item {{ $url === "form_ppdb" ? 'active' : '' }}">FORM PPDB</a>
+                    <a href="cek_data_ppdb" class="dropdown-item {{ $url === "cek_data_ppdb" ? 'active' : '' }}">CEK DATA PPDB</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">MANAGE</a>
                 <div class="dropdown-menu m-0">
                     <a href="#" class="dropdown-item">MASUK</a>
-                    <a href="#" class="dropdown-item">E-RAPOR</a>
+                    <a href="https://erapor.smkmuhkandanghaur.sch.id/" class="dropdown-item">E-RAPOR</a>
                 </div>
             </li>
         </ul>

@@ -31,3 +31,9 @@ Route::get('berita', function () {
 Route::get('kontak', function () {
     return view('website.kontak', ["url" => "kontak"]);
 });
+Route::get('form_ppdb', function () {
+    return view('website.ppdb.form_ppdb', ["url" => "form_ppdb"]);
+});
+Route::get('cek_data_ppdb', function () {
+    return view('website.ppdb.cek_data_ppdb', ["url" => "cek_data_ppdb"]);
+});
