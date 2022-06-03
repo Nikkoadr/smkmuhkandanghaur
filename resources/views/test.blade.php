@@ -8,8 +8,9 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Starter</title>
-
+    <title>Admin | SMK Muhammadiyah Kandanghaur</title>
+    <!-- Favicon -->
+    <link href="{{ asset('assets/website/img/favicon.ico') }}" rel="icon">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
@@ -28,37 +29,13 @@
     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-    <a href="index3.html" class="nav-link">Home</a>
-    </li>
-    <li class="nav-item d-none d-sm-inline-block">
-    <a href="#" class="nav-link">Contact</a>
+    <a href="/" class="nav-link">Website</a>
     </li>
     </ul>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-    <!-- Navbar Search -->
-    <li class="nav-item">
-    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-    <i class="fas fa-search"></i>
-    </a>
-    <div class="navbar-search-block">
-    <form class="form-inline">
-    <div class="input-group input-group-sm">
-    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-    <div class="input-group-append">
-    <button class="btn btn-navbar" type="submit">
-        <i class="fas fa-search"></i>
-    </button>
-    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-        <i class="fas fa-times"></i>
-    </button>
-    </div>
-    </div>
-    </form>
-    </div>
-    </li>
-
+    
     <!-- Messages Dropdown Menu -->
     <li class="nav-item dropdown">
     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -72,11 +49,10 @@
     <img src="assets/admin/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
     <div class="media-body">
     <h3 class="dropdown-item-title">
-        Brad Diesel
-        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+        Lukman
     </h3>
-    <p class="text-sm">Call me whenever you can...</p>
-    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+    <p class="text-sm">Sudah Makan Belum ?</p>
+    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 1 Jam yang Lalu</p>
     </div>
     </div>
     <!-- Message End -->
@@ -88,11 +64,10 @@
     <img src="assets/admin/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
     <div class="media-body">
     <h3 class="dropdown-item-title">
-        John Pierce
-        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+        Rizky Ramadona
     </h3>
-    <p class="text-sm">I got your message bro</p>
-    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+    <p class="text-sm">Mie ayam Atau Nasi Goreng ?</p>
+    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 30 Menit yang lalu</p>
     </div>
     </div>
     <!-- Message End -->
@@ -104,44 +79,38 @@
     <img src="assets/admin/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
     <div class="media-body">
     <h3 class="dropdown-item-title">
-        Nora Silvester
-        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+        Nani Supriyani
     </h3>
-    <p class="text-sm">The subject goes here</p>
-    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+    <p class="text-sm">Pak Minta password Wifi</p>
+    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 10 Menit yang lalu</p>
     </div>
     </div>
     <!-- Message End -->
     </a>
     <div class="dropdown-divider"></div>
-    <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+    <a href="#" class="dropdown-item dropdown-footer">Lihat Semua Pesan</a>
     </div>
     </li>
     <!-- Notifications Dropdown Menu -->
     <li class="nav-item dropdown">
     <a class="nav-link" data-toggle="dropdown" href="#">
     <i class="far fa-bell"></i>
-    <span class="badge badge-warning navbar-badge">15</span>
+    <span class="badge badge-warning navbar-badge">5</span>
     </a>
     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-    <span class="dropdown-header">15 Notifications</span>
+    <span class="dropdown-header">5 Notifikasi</span>
     <div class="dropdown-divider"></div>
     <a href="#" class="dropdown-item">
-    <i class="fas fa-envelope mr-2"></i> 4 new messages
-    <span class="float-right text-muted text-sm">3 mins</span>
+    <i class="fas fa-envelope mr-2"></i> 3 Pesan Baru
+    <span class="float-right text-muted text-sm">3 Menit</span>
     </a>
     <div class="dropdown-divider"></div>
     <a href="#" class="dropdown-item">
-    <i class="fas fa-users mr-2"></i> 8 friend requests
-    <span class="float-right text-muted text-sm">12 hours</span>
+    <i class="fas fa-file mr-2"></i> 2 Laporan
+    <span class="float-right text-muted text-sm">2 Hari</span>
     </a>
     <div class="dropdown-divider"></div>
-    <a href="#" class="dropdown-item">
-    <i class="fas fa-file mr-2"></i> 3 new reports
-    <span class="float-right text-muted text-sm">2 days</span>
-    </a>
-    <div class="dropdown-divider"></div>
-    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+    <a href="#" class="dropdown-item dropdown-footer">Lihat Semua Notifikasi</a>
     </div>
     </li>
     <li class="nav-item">
@@ -150,10 +119,15 @@
     </a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-    <i class="fas fa-th-large"></i>
+        <a class="nav-link" href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">
+        <i class="fas fa-sign-out"></i>
     </a>
-    </li>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+    @csrf
+    </form>
+        </li>
     </ul>
     </nav>
     <!-- /.navbar -->
@@ -162,8 +136,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-    <img src="assets/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <img src="assets/website/img/logo.png" alt="SMK Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light">SMK MUH KDH</span>
     </a>
 
     <!-- Sidebar -->
@@ -174,58 +148,64 @@
     <img src="assets/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
-    <a href="#" class="d-block">Alexander Pierce</a>
+    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
     </div>
     </div>
 
-    <!-- SidebarSearch Form -->
     <div class="form-inline">
-    <div class="input-group" data-widget="sidebar-search">
-    <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-    <div class="input-group-append">
-    <button class="btn btn-sidebar">
-    <i class="fas fa-search fa-fw"></i>
-    </button>
-    </div>
-    </div>
-    </div>
+        <div class="input-group" data-widget="sidebar-search">
+        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+        <button class="btn btn-sidebar">
+        <i class="fas fa-search fa-fw"></i>
+        </button>
+        </div>
+        </div>
+        </div>
 
     <!-- Sidebar Menu -->
     <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
     <!-- Add icons to the links using the .nav-icon class
     with font-awesome or any other icon font library -->
+    <li class="nav-item">
+        <a href="#" class="nav-link active">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+        <p>
+        Dashboard
+        </p>
+        </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fa-solid fa-user-plus"></i>
+            <p>
+            PPDB
+            </p>
+            </a>
+            </li>
     <li class="nav-item menu-open">
-    <a href="#" class="nav-link active">
-    <i class="nav-icon fas fa-tachometer-alt"></i>
+    <a href="#" class="nav-link">
+        <i class="nav-icon fa-solid fa-newspaper"></i>
     <p>
-    Starter Pages
+    Berita
     <i class="right fas fa-angle-left"></i>
     </p>
     </a>
     <ul class="nav nav-treeview">
     <li class="nav-item">
-    <a href="#" class="nav-link active">
+    <a href="#" class="nav-link">
         <i class="far fa-circle nav-icon"></i>
-        <p>Active Page</p>
+        <p>Semua Berita</p>
     </a>
     </li>
     <li class="nav-item">
     <a href="#" class="nav-link">
         <i class="far fa-circle nav-icon"></i>
-        <p>Inactive Page</p>
+        <p>Komentar</p>
     </a>
     </li>
     </ul>
-    </li>
-    <li class="nav-item">
-    <a href="#" class="nav-link">
-    <i class="nav-icon fas fa-th"></i>
-    <p>
-    Simple Link
-    <span class="right badge badge-danger">New</span>
-    </p>
-    </a>
     </li>
     </ul>
     </nav>
@@ -241,12 +221,12 @@
     <div class="container-fluid">
     <div class="row mb-2">
     <div class="col-sm-6">
-    <h1 class="m-0">Starter Page</h1>
+    <h1 class="m-0">Dashboard Administartor</h1>
     </div><!-- /.col -->
     <div class="col-sm-6">
     <ol class="breadcrumb float-sm-right">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active">Starter Page</li>
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active">Dashboard</li>
     </ol>
     </div><!-- /.col -->
     </div><!-- /.row -->
@@ -255,90 +235,42 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <div class="content">
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-lg-6">
-    <div class="card">
-    <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <section class="content">
 
-    <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-    </p>
-
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-    </div>
-    </div>
-
-    <div class="card card-primary card-outline">
-    <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-
-    <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-    </p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-    </div>
-    </div><!-- /.card -->
-    </div>
-    <!-- /.col-md-6 -->
-    <div class="col-lg-6">
-    <div class="card">
-    <div class="card-header">
-    <h5 class="m-0">Featured</h5>
-    </div>
-    <div class="card-body">
-    <h6 class="card-title">Special title treatment</h6>
-
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    </div>
-
-    <div class="card card-primary card-outline">
-    <div class="card-header">
-    <h5 class="m-0">Featured</h5>
-    </div>
-    <div class="card-body">
-    <h6 class="card-title">Special title treatment</h6>
-
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    </div>
-    </div>
-    <!-- /.col-md-6 -->
-    </div>
-    <!-- /.row -->
-    </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content -->
+        <div class="card">
+        <div class="card-header">
+        <h3 class="card-title">Title</h3>
+        <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+        <i class="fas fa-minus"></i>
+        </button>
+        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+        <i class="fas fa-times"></i>
+        </button>
+        </div>
+        </div>
+        <div class="card-body">
+        Start creating your amazing application!
+        </div>
+        
+        <div class="card-footer">
+        Footer
+        </div>
+        
+        </div>
+        
+        </section>
     </div>
     <!-- /.content-wrapper -->
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-    <h5>Title</h5>
-    <p>Sidebar content</p>
-    </div>
-    </aside>
-    <!-- /.control-sidebar -->
 
     <!-- Main Footer -->
     <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-    Anything you want
+    <b>Versi</b> 1.0.2
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021-2022 <a href="https://github.com\Nikkoadr">Nikko Adrian</a>.</strong> All rights reserved.
     </footer>
     </div>
     <!-- ./wrapper -->
