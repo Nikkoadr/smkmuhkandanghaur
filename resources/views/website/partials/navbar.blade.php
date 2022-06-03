@@ -38,8 +38,14 @@
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">MANAGE</a>
                 <div class="dropdown-menu m-0">
-                    <a href="#" class="dropdown-item">MASUK</a>
-                    <a href="https://erapor.smkmuhkandanghaur.sch.id/" class="dropdown-item">E-RAPOR</a>
+                    @if (Route::has('login'))
+                    @auth
+                    <a class="dropdown-item" href="{{ url('/home') }}">ADMIN</a>
+                    @else
+                    <a class="dropdown-item" href="{{ route('login') }}">MASUK</a>
+                    @endauth
+                    @endif
+                    <a class="dropdown-item" href="http://erapor.smkmuhkandanghaur.sch.id/login">E-RAPOR</a>
                 </div>
             </li>
         </ul>
