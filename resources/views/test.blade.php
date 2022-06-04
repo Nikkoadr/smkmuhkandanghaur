@@ -4,7 +4,7 @@
     This is a starter template page. Use this page to start your new project from
     scratch. This page gets rid of all links and provides the needed markup only.
     -->
-    <html lang="en">
+    <html lang="en"> 
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,7 @@
     <img src="assets/admin/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
     <div class="media-body">
     <h3 class="dropdown-item-title">
-        Lukman
+        Lukman 
     </h3>
     <p class="text-sm">Sudah Makan Belum ?</p>
     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 1 Jam yang Lalu</p>
