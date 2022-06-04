@@ -15,7 +15,7 @@
     <!-- Contact Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="row">
+            <div style="background: rgba(128, 128, 128, 0.158); border-radius: 10px;" class="row p-5">
                 <div class="wow slideInUp" data-wow-delay="0.3s">
                     <form>
                         <div class="row g-3">

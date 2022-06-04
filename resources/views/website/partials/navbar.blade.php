@@ -45,7 +45,7 @@
                     <a class="dropdown-item" href="{{ route('login') }}">MASUK</a>
                     @endauth
                     @endif
-                    <a class="dropdown-item" href="http://erapor.smkmuhkandanghaur.sch.id/login">E-RAPOR</a>
+                    <a class="dropdown-item" href="http://erapor.smkmuhkandanghaur.sch.id">E-RAPOR</a>
                 </div>
             </li>
         </ul>
