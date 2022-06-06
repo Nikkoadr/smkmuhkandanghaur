@@ -319,16 +319,16 @@
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                 <div class="blog-item bg-light rounded overflow-hidden">
                     <div class="blog-img position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('assets/website/img/blog-1.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('assets/website/img/berita/tesBKK.jpg') }}" alt="">
                         <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">BKK</a>
                     </div>
                     <div class="p-4">
                         <div class="d-flex mb-3">
                             <small class="me-3"><i class="far fa-user text-primary me-2"></i>Afandi</small>
-                            <small><i class="far fa-calendar-alt text-primary me-2"></i>13 MEI, 2022</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>3 JUNI, 2022</small>
                         </div>
-                        <h4 class="mb-3">Info Loker</h4>
-                        <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                        <h4 class="mb-3">Seleksi BKK</h4>
+                        <p>Acara Seleksi Calon Tenaga Kerja yang di selenggarakan oleh BKK SMK Muhammadiyah Kandanghaur</p>
                         <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -336,16 +336,16 @@
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                 <div class="blog-item bg-light rounded overflow-hidden">
                     <div class="blog-img position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('assets/website/img/blog-2.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('assets/website/img/berita/pawidya.jpg') }}" alt="">
                         <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">SMK PK</a>
                     </div>
                     <div class="p-4">
                         <div class="d-flex mb-3">
-                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Edi Yuswanto</small>
-                            <small><i class="far fa-calendar-alt text-primary me-2"></i>12 MEI, 2022</small>
+                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Maman Triaman</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>14 MEI, 2022</small>
                         </div>
-                        <h4 class="mb-3">Undangan Pawidya</h4>
-                        <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                        <h4 class="mb-3">Acara Pawidya</h4>
+                        <p>Pelepasan Siswa dan Siswi SMK Muhammadiyah Kandanghaur yang ke 23</p>
                         <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -353,16 +353,16 @@
             <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
                 <div class="blog-item bg-light rounded overflow-hidden">
                     <div class="blog-img position-relative overflow-hidden">
-                        <img class="img-fluid" src="{{ asset('assets/website/img/blog-3.jpg') }}" alt="">
+                        <img class="img-fluid" src="{{ asset('assets/website/img/berita/pelantikan.jpg') }}" alt="">
                         <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">EKSTRAKURIKULER</a>
                     </div>
                     <div class="p-4">
                         <div class="d-flex mb-3">
-                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Maman Triaman</small>
-                            <small><i class="far fa-calendar-alt text-primary me-2"></i>11 MEI, 2022</small>
+                            <small class="me-3"><i class="far fa-user text-primary me-2"></i>Rudi Jaya Sakti</small>
+                            <small><i class="far fa-calendar-alt text-primary me-2"></i>27 Januari, 2022</small>
                         </div>
-                        <h4 class="mb-3">Pelantikan SISPALA</h4>
-                        <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                        <h4 class="mb-3">Pelantikan hizbul wathan</h4>
+                        <p>Acara Pelantikan Ekstrakurikuler Hizbul Wathan SMK Muhammadiyah Kandanghaur</p>
                         <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>

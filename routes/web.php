@@ -39,6 +39,6 @@ Route::get('cek_data_ppdb', function () {
     return view('website.ppdb.cek_data_ppdb', ["url" => "cek_data_ppdb"]);
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
