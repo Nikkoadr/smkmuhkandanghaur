@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="card-body">
-                Create
+                Dashboard Dalam Tahap Pengembangan
             </div>
             <div class="card-footer">
                 Footer
