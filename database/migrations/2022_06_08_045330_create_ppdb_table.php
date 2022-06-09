@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('code')->unique();
             $table->string('nama');
             $table->enum('jenis_kelamin', ['L', 'P'])->default('L');
-            $table->date('ttl');
+            $table->string('tempat_lahir');
+            $table->date('tanggal_lahir');
             $table->string('asal_sekolah');
             $table->string('no_hp_siswa');
             $table->string('no_hp_wali');
