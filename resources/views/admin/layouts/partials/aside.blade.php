@@ -34,7 +34,7 @@
     <!-- Add icons to the links using the .nav-icon class
     with font-awesome or any other icon font library -->
     <li class="nav-item">
-        <a href="#" class="nav-link active">
+        <a href="dashboard" class="nav-link {{ $url === "Dashboard" ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
         <p>
         Dashboard
@@ -42,7 +42,7 @@
         </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="admin_ppdb" class="nav-link {{ $url === "Admin_ppdb" ? 'active' : '' }}">
                 <i class="nav-icon fa-solid fa-user-plus"></i>
             <p>
             PPDB
@@ -59,13 +59,13 @@
     </a>
     <ul class="nav nav-treeview">
     <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="admin_berita" class="nav-link">
         <i class="far fa-circle nav-icon"></i>
         <p>Semua Berita</p>
     </a>
     </li>
     <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="komentar" class="nav-link">
         <i class="far fa-circle nav-icon"></i>
         <p>Komentar</p>
     </a>

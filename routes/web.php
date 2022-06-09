@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PpdbController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,31 +17,16 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('website.home', ["url" => "home"]);
-});
-Route::get('program', function () {
-    return view('website.program', ["url" => "program"]);
-});
-Route::get('fasilitas', function () {
-    return view('website.fasilitas', ["url" => "fasilitas"]);
-});
-Route::get('ekstrakurikuler', function () {
-    return view('website.ekstrakurikuler', ["url" => "ekstrakurikuler"]);
-});
-Route::get('berita', function () {
-    return view('website.berita', ["url" => "berita"]);
-});
-Route::get('kontak', function () {
-    return view('website.kontak', ["url" => "kontak"]);
-});
-Route::get('form_ppdb', function () {
-    return view('website.ppdb.form_ppdb', ["url" => "form_ppdb"]);
-});
-Route::get('cek_data_ppdb', function () {
-    return view('website.ppdb.cek_data_ppdb', ["url" => "cek_data_ppdb"]);
-});
+Route::get('/', [WebsiteController::class, 'home'])->name('home');
+Route::get('program', [WebsiteController::class, 'program'])->name('program');
+Route::get('fasilitas', [WebsiteController::class, 'fasilitas'])->name('fasilitas');
+Route::get('ekstrakurikuler', [WebsiteController::class, 'ekstrakurikuler'])->name('ekstrakurikuler');
+Route::get('berita', [WebsiteController::class, 'berita'])->name('berita');
+Route::get('kontak', [WebsiteController::class, 'kontak'])->name('kontak');
+Route::get('form_ppdb', [WebsiteController::class, 'form_ppdb'])->name('form_ppdb');
+Route::get('cek_data_ppdb', [WebsiteController::class, 'cek_data_ppdb'])->name('cek_data_ppdb');
 
 Auth::routes(['register' => false]);
 
-Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('admin_ppdb', [PpdbController::class, 'index'])->name('admin_ppdb');

@@ -31,5 +31,20 @@ class seed_ppdb extends Seeder
             'referensi' => 'Maman',
             'tapel' => '2022'
         ]);
+        Ppdb::create([
+            'id' => Uuid::uuid4()->toString(),
+            'code' => rand(10, 5000),
+            'nama' => 'pitri',
+            'jenis_kelamin' => 'P',
+            'tempat_lahir' => 'Indramayu',
+            'Tanggal_lahir' => Carbon::create(1999, 02, 25),
+            'asal_sekolah' => 'SMP N Gabuswetan',
+            'no_hp_siswa' => '081280009000',
+            'no_hp_wali' => '081250007000',
+            'alamat' => 'JL Raya Gabuswetan No 17 Kandanghaur Indramayu',
+            'program_keahlian' => 'TEKNIK DAN BISNIS SEPEDA MOTOR ( TBSM )',
+            'referensi' => 'Lukman',
+            'tapel' => '2022'
+        ]);
     }
 }
