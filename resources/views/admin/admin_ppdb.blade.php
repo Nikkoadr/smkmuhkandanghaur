@@ -53,44 +53,31 @@
                   </tr>
                   </thead>
                   <tbody>
+                  <?php $no=1; ?>
+                  @foreach ($data_peserta_didik_baru as $data )
                   <tr>
-                    <td>1</td>
-                    <td>4822</td>
-                    <td>Sifulan</td>
-                    <td>L</td>
-                    <td>Indramayu, 08-05-2000</td>
-                    <td>SMP N Losarang</td>
-                    <td>Siswa: 081290005000
+                    <td><?= $no++ ?></td>
+                    <td>{{ $data -> code }}</td>
+                    <td>{{ $data -> nama }}</td>
+                    <td>{{ $data-> jenis_kelamin }}</td>
+                    <td>{{ $data-> tempat_lahir }}, {{ $data -> tanggal_lahir }}</td>
+                    <td>{{ $data -> asal_sekolah }}</td>
+                    <td>Siswa: {{ $data -> no_hp_siswa }}
                         <br>
-                        Wali: 081200002000
+                        Wali: {{ $data -> no_hp_wali }}
                     </td>
-                    <td>JL Raya Losarang</td>
-                    <td>TPFL</td>
-                    <td>Maman</td>
+                    <td>{{ $data -> alamat }}</td>
+                    <td>{{ $data -> program_keahlian }}</td>
+                    <td>{{ $data -> referensi }}</td>
                     <td style="text-align: center">
                         <div style="display: inline;">
-                            <button style="margin-right: 2px" class="btn btn-primary">Edit</button> 
-                            <button class="btn btn-danger">Delete</button>
+                            <button style="margin-right: 2px" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button> 
+                            <button class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
                         </div>
                     </td>
                   </tr>
-                  
+                  @endforeach
                   </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>No</th>
-                    <th>Code</th>
-                    <th>Nama</th>
-                    <th>Jenis Kelamin</th>
-                    <th>TTL</th>
-                    <th>Asal Sekolah</th>
-                    <th>Kontak</th>
-                    <th>Alamat</th>
-                    <th>Program Keahlian</th>
-                    <th>Referensi</th>
-                    <th>Menu</th>
-                  </tr>
-                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->

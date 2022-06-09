@@ -17,7 +17,7 @@ return new class extends Migration
             $table->uuid('id')->primary()->unique();
             $table->string('code')->unique();
             $table->string('nama');
-            $table->enum('jenis_kelamin', ['L', 'P'])->default('L');
+            $table->enum('jenis_kelamin', ['Laki - Laki', 'Perempuan'])->default('Laki - Laki');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
             $table->string('asal_sekolah');

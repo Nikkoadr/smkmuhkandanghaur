@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ppdb;
 use Illuminate\Http\Request;
 
 class PpdbController extends Controller
@@ -23,6 +24,7 @@ class PpdbController extends Controller
      */
     public function index()
     {
-        return view('admin.admin_ppdb', ["url" => "Admin_ppdb"]);
+        $data_peserta_didik_baru = Ppdb::all();
+        return view('admin.admin_ppdb', compact(['data_peserta_didik_baru']), ["url" => "Admin_ppdb"]);
     }
 }
