@@ -40,7 +40,7 @@
                 <div class="dropdown-menu m-0">
                     @if (Route::has('login'))
                     @auth
-                    <a class="dropdown-item" href="{{ url('dashbaord') }}">ADMIN</a>
+                    <a class="dropdown-item" href="{{ url('dashboard') }}">ADMIN</a>
                     @else
                     <a class="dropdown-item" href="{{ route('login') }}">MASUK</a>
                     @endauth
