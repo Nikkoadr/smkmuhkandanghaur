@@ -24,9 +24,11 @@ Route::get('ekstrakurikuler', [WebsiteController::class, 'ekstrakurikuler'])->na
 Route::get('berita', [WebsiteController::class, 'berita'])->name('berita');
 Route::get('kontak', [WebsiteController::class, 'kontak'])->name('kontak');
 Route::get('form_ppdb', [WebsiteController::class, 'form_ppdb'])->name('form_ppdb');
+Route::post('tambah_peserta_didik_baru_logout', [WebsiteController::class, 'store'])->name('tambah_peserta_didik_baru_logout');
 Route::get('cek_data_ppdb', [WebsiteController::class, 'cek_data_ppdb'])->name('cek_data_ppdb');
 
 Auth::routes(['register' => false]);
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('admin_ppdb', [PpdbController::class, 'index'])->name('admin_ppdb');
+Route::post('tambah_peserta_didik_baru_login', [PpdbController::class, 'store'])->name('tambah_peserta_didik_baru_login');

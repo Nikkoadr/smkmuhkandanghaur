@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ppdb;
 
 class WebsiteController extends Controller
 {
@@ -33,6 +34,11 @@ class WebsiteController extends Controller
     public function form_ppdb()
     {
         return view('website.ppdb.form_ppdb', ["url" => "form_ppdb"]);
+    }
+    public function store(Request $request)
+    {
+        Ppdb::create($request->except('_token'));
+        return redirect('form_ppdb');
     }
     public function cek_data_ppdb()
     {

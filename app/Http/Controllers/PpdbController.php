@@ -27,12 +27,9 @@ class PpdbController extends Controller
         $data_peserta_didik_baru = Ppdb::all();
         return view('admin.admin_ppdb', compact(['data_peserta_didik_baru']), ["url" => "Admin_ppdb"]);
     }
-    public function put()
+    public function store(Request $request)
     {
-        //
-    }
-    public function store()
-    {
-        //
+        Ppdb::create($request->except('_token'));
+        return redirect('admin_ppdb');
     }
 }
