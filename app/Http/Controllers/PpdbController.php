@@ -32,4 +32,10 @@ class PpdbController extends Controller
         Ppdb::create($request->except('_token'));
         return redirect('admin_ppdb');
     }
+    public function update($id, Request $request)
+    {
+        $ppdb = Ppdb::find($id);
+        $ppdb->update($request->except('_token'));
+        return redirect('admin_ppdb');
+    }
 }

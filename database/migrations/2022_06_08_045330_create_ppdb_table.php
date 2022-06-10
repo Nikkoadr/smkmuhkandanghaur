@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('ppdb', function (Blueprint $table) {
-            $table->uuid('id')->primary()->unique();
+            $table->id();
             $table->string('code')->unique();
             $table->string('nama');
             $table->enum('jenis_kelamin', ['Laki - Laki', 'Perempuan'])->default('Laki - Laki');

@@ -18,13 +18,11 @@ class seed_user extends Seeder
     {
         $users = collect([]);
         $users->push([
-            'id' => Uuid::uuid4()->toString(),
             'name' => 'Administrator',
             'email' => 'admin@smkmuhkandanghaur.sch.id',
             'password' => 'P4ssw0rd',
             'level' => 99
         ], [
-            'id' => Uuid::uuid4()->toString(),
             'name' => 'Nikko Adrian',
             'email' => 'nikko@smkmuhkandanghaur.sch.id',
             'password' => '1234567800',
@@ -34,7 +32,6 @@ class seed_user extends Seeder
             $check = User::where('email', $user['email'])->get();
             if ($check->count() === 0) {
                 $data = new User();
-                $data->id = $user['id'];
                 $data->name = $user['name'];
                 $data->email = $user['email'];
                 $data->password = Hash::make($user['password']);

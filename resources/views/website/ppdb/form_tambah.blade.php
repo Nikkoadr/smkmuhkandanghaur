@@ -1,7 +1,6 @@
 
                         <div class="row g-3">
                           @csrf
-                          <input type="hidden" value="{{ Ramsey\Uuid\Uuid::uuid4()->toString() }}" name="id">
                           <input type="hidden" value="{{ rand(10, 5000) }}" name="code">
                             <div class="col-md-3">
                                 <label for="nama"><p class="p-3">Nama Lengkap :<span style="color: red">*</span></p></label>
@@ -15,7 +14,7 @@
                             <div class="col-9">
                                 <select id="kelamin" type="text" name="jenis_kelamin" class="form-control border-0 bg-light px-4" placeholder="Jenis Kelamin" style="height: 55px;">
                                     <option value="">Pilih Jenis Kelamin</option>
-                                    <option value="laki - laki">Laki - Laki</option>
+                                    <option value="Laki - Laki">Laki - Laki</option>
                                     <option value="Perempuan">Perempuan</option>
                                 </select>
                             </div>
