@@ -102,7 +102,6 @@
                             <button style="margin-right: 2px" class="btn btn-primary"><i class="fa-solid fa-pen-to-square" data-toggle="modal" data-target="#edit-{{ $data->id }}"></i></button> 
                             @include('admin.layouts.modal.form_edit')
                             <a href="hapus_peserta_didik_baru/{{ $data->id }}" class="btn btn-danger konfirmasi"><i class="fa-solid fa-trash-can"></i></a>
-                          
                         </div>
                     </td>
                   </tr>
@@ -154,23 +153,33 @@
     event.preventDefault();
     const url = $(this).attr('href');
 Swal.fire({
-  title: 'Are you sure?',
-  text: "You won't be able to revert this!",
+  text: "datang yang sudah di hapus tidak akan kembali !",
   icon: 'warning',
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!'
+  confirmButtonText: 'Ya, Hapus!'
 }).then((result) => {
   if (result.isConfirmed) {
-    Swal.fire(
-      'Deleted!',
-      'Your file has been deleted.',
-      'success'
-    )
     window.location.href = url;
   }
 })
 });
+</script>
+<script>
+    $(function() {
+    var Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
+    @if (Session::get('success'))
+      Toast.fire({
+        icon: 'success',
+        title: '{{ Session::get('success') }}'
+      })
+    @endif
+  });
 </script>
 @endsection

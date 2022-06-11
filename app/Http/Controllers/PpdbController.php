@@ -30,18 +30,18 @@ class PpdbController extends Controller
     public function store(Request $request)
     {
         Ppdb::create($request->except('_token'));
-        return redirect('admin_ppdb');
+        return redirect('admin_ppdb')->with('success', 'Data berhasil ditambahkan');
     }
     public function update($id, Request $request)
     {
         $ppdb = Ppdb::find($id);
         $ppdb->update($request->except('_token'));
-        return redirect('admin_ppdb');
+        return redirect('admin_ppdb')->with('success', 'Data berhasil diedit');
     }
     public function destroy($id)
     {
         $ppdb = Ppdb::find($id);
         $ppdb->delete();
-        return redirect('admin_ppdb')->with('success', 'Data deleted successfully');
+        return redirect('admin_ppdb')->with('success', 'Data berhasil dihapus');
     }
 }

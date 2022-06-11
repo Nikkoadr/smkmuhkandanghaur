@@ -82,7 +82,7 @@
                                     <div class="col-9">
                                         <input id="referensi" type="text" name="referensi" class="form-control border-0 bg-light px-4" value="{{ $data->referensi }}" style="height: 55px;">
                                     </div>
-                                    <input type="hidden" value="2022" name="tapel">
+                                    <input type="hidden" value="{{ $data->tapel }}" name="tapel">
                                     <div class="col-md-3">
                                         <label for="daftar"><p class="p-3">Bertanda (<span style="color: red">*</span>) Wajib diisi</p></label>
                                     </div>
