@@ -1,6 +1,7 @@
 
                         <div class="row g-3">
                           @csrf
+                          <input type="hidden" value="{{ Ramsey\Uuid\Uuid::uuid4()->toString() }}" name="id">
                           <input type="hidden" value="{{ rand(10, 5000) }}" name="code">
                             <div class="col-md-3">
                                 <label for="nama"><p class="p-3">Nama Lengkap :<span style="color: red">*</span></p></label>
@@ -66,12 +67,12 @@
                                 </select>
                             </div>
                             <div class="col-md-3">
-                                <label for="referensi"><p class="p-3">Referensi :<span style="color: red">*</span></p></label>
+                                <label for="referensi"><p class="p-3">Referensi :</span></p></label>
                             </div>
                             <div class="col-9">
                                 <input id="referensi" type="text" name="referensi" class="form-control border-0 bg-light px-4" placeholder="Contoh : Sifulan X TKRO 6" style="height: 55px;">
                             </div>
-                            <input type="hidden" value="2022" name="tapel">
+                            <input type="hidden" value="{{ Illuminate\Support\Carbon::now('Y') }}" name="tapel">
                             <div class="col-md-3">
                                 <label for="daftar"><p class="p-3">Bertanda (<span style="color: red">*</span>) Wajib diisi</p></label>
                             </div>

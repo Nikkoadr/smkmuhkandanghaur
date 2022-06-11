@@ -38,4 +38,10 @@ class PpdbController extends Controller
         $ppdb->update($request->except('_token'));
         return redirect('admin_ppdb');
     }
+    public function destroy($id)
+    {
+        $ppdb = Ppdb::find($id);
+        $ppdb->delete();
+        return redirect('admin_ppdb')->with('success', 'Data deleted successfully');
+    }
 }

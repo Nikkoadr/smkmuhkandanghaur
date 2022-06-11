@@ -17,6 +17,7 @@ class seed_ppdb extends Seeder
     public function run()
     {
         Ppdb::create([
+            'id' => Uuid::uuid4()->toString(),
             'code' => rand(10, 5000),
             'nama' => 'Sifulan',
             'jenis_kelamin' => 'Laki - Laki',
@@ -31,6 +32,7 @@ class seed_ppdb extends Seeder
             'tapel' => '2022'
         ]);
         Ppdb::create([
+            'id' => Uuid::uuid4()->toString(),
             'code' => rand(10, 5000),
             'nama' => 'pitri',
             'jenis_kelamin' => 'Perempuan',
