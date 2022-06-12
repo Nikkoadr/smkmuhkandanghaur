@@ -167,7 +167,7 @@ Swal.fire({
 });
 </script>
 <script>
-  @if (Session::get('success'))
+  @if (session()->has('success'))
     $(function() {
     var Toast = Swal.mixin({
       toast: true,
@@ -177,7 +177,7 @@ Swal.fire({
     });
       Toast.fire({
         icon: 'success',
-        title: '{{ Session::get('success') }}'
+        title: '{{ session('success') }}'
       })
   });
   @endif
