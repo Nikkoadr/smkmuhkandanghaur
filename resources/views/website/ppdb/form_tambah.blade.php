@@ -1,13 +1,18 @@
 
                         <div class="row g-3">
-                          @csrf
-                          <input type="hidden" value="{{ Ramsey\Uuid\Uuid::uuid4()->toString() }}" name="id">
-                          <input type="hidden" value="{{ rand(10, 5000) }}" name="code">
+                        @csrf
+                        <input type="hidden" value="{{ Ramsey\Uuid\Uuid::uuid4()->toString() }}" name="id">
+                        <input type="hidden" value="{{ rand(10, 5000) }}" name="code">
                             <div class="col-md-3">
                                 <label for="nama"><p class="p-3">Nama Lengkap :<span style="color: red">*</span></p></label>
                             </div>
                             <div class="col-md-9">
-                                <input type="text" name="nama" id="nama" class="form-control border-0 bg-light px-4" placeholder="Nama Lengkap" style="height: 55px;">
+                                <input type="text" name="nama" id="nama" class="form-control border-0 bg-light px-4 @error('nama') is-invalid @enderror" placeholder="Nama Lengkap" value="{{ old('nama') }}" style="height: 55px;">
+                        @error('nama')
+                        <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                             </div>
                             <div class="col-md-3">
                                 <label for="kelamin"><p class="p-3">Jenis Kelamin :<span style="color: red">*</span></p></label>

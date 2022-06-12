@@ -37,7 +37,20 @@ class WebsiteController extends Controller
     }
     public function store(Request $request)
     {
-        Ppdb::create($request->except('_token'));
+        $data_valid = $request->validate([
+            'code'              => 'required',
+            'nama'              => 'required|max:255',
+            'jenis_kelamin'     => 'required',
+            'tempat_lahir'      => 'required',
+            'tanggal_lahir'     => 'required',
+            'asal_sekolah'      => 'required',
+            'no_hp_siswa'       => 'required',
+            'no_hp_wali'        => 'required',
+            'alamat'            => 'required',
+            'program_keahlian'  => 'required',
+            'referensi'         => 'min:2',
+        ]);
+        Ppdb::create($data_valid);
         return redirect('form_ppdb');
     }
     public function cek_data_ppdb()
