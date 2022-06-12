@@ -38,17 +38,19 @@ class WebsiteController extends Controller
     public function store(Request $request)
     {
         $data_valid = $request->validate([
-            'code'              => 'required',
+            'id'                => 'required|unique:ppdb',
+            'code'              => 'required|unique:ppdb',
             'nama'              => 'required|max:255',
             'jenis_kelamin'     => 'required',
             'tempat_lahir'      => 'required',
             'tanggal_lahir'     => 'required',
             'asal_sekolah'      => 'required',
-            'no_hp_siswa'       => 'required',
-            'no_hp_wali'        => 'required',
-            'alamat'            => 'required',
+            'no_hp_siswa'       => 'required|max:15',
+            'no_hp_wali'        => 'required|max:15',
+            'alamat'            => 'required|max:255',
             'program_keahlian'  => 'required',
-            'referensi'         => 'min:2',
+            'referensi'         => 'nullable|min:2',
+            'tapel'             => 'required|max:5'
         ]);
         Ppdb::create($data_valid);
         return redirect('form_ppdb');

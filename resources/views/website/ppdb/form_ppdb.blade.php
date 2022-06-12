@@ -18,7 +18,7 @@
             <div style="background: rgba(128, 128, 128, 0.158); border-radius: 10px;" class="row p-5">
                 <div class="wow slideInUp" data-wow-delay="0.3s">
                     <form action="tambah_peserta_didik_baru_logout" method="POST">
-                        @include('website.ppdb.form_tambah')
+                        @include('component.modal.form_tambah')
                     </form>
                 </div>
             </div>

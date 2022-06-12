@@ -50,7 +50,7 @@
                           </div>
                           <div class="modal-body">
                           <form action="tambah_peserta_didik_baru_login" method="POST">
-                              @include('website.ppdb.form_tambah')
+                              @include('component.modal.form_tambah')
                           </form>
                           </div>
                         </div>
@@ -100,7 +100,7 @@
                     <td style="text-align: center">
                         <div style="display: inline;">
                             <button style="margin-right: 2px" class="btn btn-primary"><i class="fa-solid fa-pen-to-square" data-toggle="modal" data-target="#edit-{{ $data->id }}"></i></button> 
-                            @include('admin.layouts.modal.form_edit')
+                            @include('component.modal.form_edit')
                             <a href="hapus_peserta_didik_baru/{{ $data->id }}" class="btn btn-danger konfirmasi"><i class="fa-solid fa-trash-can"></i></a>
                         </div>
                     </td>
