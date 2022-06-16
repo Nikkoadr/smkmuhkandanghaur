@@ -153,7 +153,7 @@
     event.preventDefault();
     const url = $(this).attr('href');
 Swal.fire({
-  text: "datang yang sudah di hapus tidak akan kembali !",
+  text: "Anda yakin ingin menghapus data ini ? ",
   icon: 'warning',
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
