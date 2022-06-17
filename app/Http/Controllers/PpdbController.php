@@ -72,6 +72,12 @@ class PpdbController extends Controller
         return redirect('admin_ppdb')->with('success', 'Data berhasil diedit');
     }
 
+    public function print()
+    {
+        $data_peserta_didik_baru = Ppdb::all();
+        return view('component.cetak_pendaftaran_ppdb', ["url" => "Admin_ppdb"]);
+    }
+
     public function destroy($id)
     {
         $ppdb = Ppdb::find($id);

@@ -1,27 +1,52 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cetak Pendaftaran PPDB</title>
+@extends('admin.layouts.admin_main')
+@section('head')
     <link rel="stylesheet" href="{{ asset('css/cetak.min.css') }}">
     <style>
-        *{
-            font-size: 10pt !important;
-            font-family: 'Times New Roman', Times, serif !important;
-        }
+ 
         ol > li{
             padding:5px 10px;
         }
     </style>
-</head>
-<body>
-@forelse($participants as $participant)
+@endsection
+@section('content')
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Admin Penerimaan Peserta Didik Baru</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Admin PPDB</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Print Peserta Didik Baru</h3>
+              </div>
+              <div>
+                <a href="admin_ppdb" type="button" class="btn btn-primary" style="float: right; margin: 15px;"><i class="fas fa-times"></i> Kembali</a>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
     <div class="page">
         <table width="100%">
             <tr>
                 <td width="100px" align="center" valign="middle">
-                    <img src="{{asset('assets/welcome/img/dikdasmenmuh.png')}}" width="80%">
+                    <img src="{{asset('assets/admin/dist/img/dikdasmenmuh.png')}}" width="80%">
                 </td>
                 <td align="center" valign="middle">
                     <b style="color:#007bff;font-size:10pt !important;">MAJELIS PENDIDIKAN DASAR DAN MENENGAH</b><br>
@@ -33,12 +58,12 @@
                     <div style="height:20px"></div>
                 </td>
                 <td width="100px" align="center" valign="middle">
-                    <img src="{{asset('assets/welcome/img/logo.png')}}" width="80%">
+                    <img src="{{asset('assets/website/img/logo.png')}}" width="80%">
                 </td>
             </tr>
             <tr>
                 <td colspan="3" align="center">
-                    <small style="font-size:8pt !important;">Program Keahlian : Teknik Otomotif, Teknik Pengelasan dan Fabrikasi Logam, Teknik Elektronika, Teknik Jaringan Komputer dan Telekomunikasi, Teknologi Farmasi</small><br>
+                    <small style="font-size:8pt !important;">Paket Keahlian : Teknik Otomotif, Teknik Pengelasan dan Fabrikasi Logam, Teknik Elektronika, Teknik Jaringan Komputer dan Telekomunikasi, Teknologi Farmasi</small><br>
                     <small style="font-size:8pt !important;">Jl. Raya Karanganyar No. 28/A Kec. Kandanghaur Kab. Indramayu 45254 Telp. (0234) 507239, email : smkmuhkdh@gmail.com website : smkmuhkandanghaur.sch.id</small>
                 </td>
             </tr>
@@ -48,7 +73,7 @@
             <b style="font-size:14pt !important;">FORMULIR PENDAFTARAN ONLINE</b>
         </div>
         <div style="text-align:left; margin:20px auto 20px auto">
-            <b style="font-size:12pt !important;">Code Pendaftaran : {{$participant['meta']['nomor_pendaftaran']}}</b>
+            <b style="font-size:12pt !important;">Code Pendaftaran : </b>
         </div>
         <table width="100%" class="it-grid">
             <tr style="background:#f6ff00">
@@ -56,39 +81,39 @@
             </tr>
             <tr>
                 <td width="250px">Nama Lengkap Peserta Didik</td>
-                <td>{{$participant['label']}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Jenis Kelamin</td>
-                <td>{{$participant['meta']['jenis_kelamin'] == 'L' ? 'Laki-laki' : 'Perempuan'}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Tempat Lahir</td>
-                <td>{{$participant['meta']['kelahiran']['tempat']}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Tanggal Lahir</td>
-                <td>{{\Carbon\Carbon::parse($participant['meta']['kelahiran']['tanggal'])->translatedFormat('d F Y')}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Asal Sekolah</td>
-                <td>{{$participant['meta']['sekolah']}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Nomor HP Aktif Peserta Didik</td>
-                <td>{{$participant['meta']['nomor_telepon']['sendiri']}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Nomor HP Aktif Orang Tua</td>
-                <td>{{$participant['meta']['nomor_telepon']['orang_tua']}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Jurusan Yang Diminati</td>
-                <td>{{jurusanToLong($participant['meta']['jurusan'])}}</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Referensi</td>
-                <td>{{($participant['meta']['referensi'])}}</td>
+                <td></td>
             </tr>
         </table>
         <table width="100%" style="margin:20px auto">
@@ -106,11 +131,11 @@
                     </div>
                 </td>
                 <td align="center" valign="top" style=" background-position :30%; background-repeat: no-repeat; background-size: 100px 100px; background-image: url('{{asset('assets/admin/dist/img/stempel_ppdb.png')}}');">
-                    Indramayu, {{\Carbon\Carbon::parse($participant['meta']['created'])->translatedFormat('d F Y')}}<br>
+                    Indramayu, <br>
                     &nbsp;<br>
                     <br>
                     &nbsp;<br>
-                    Panitia PPDB TA. {{$participant['meta']['tahun_pelajaran']}}/{{$participant['meta']['tahun_pelajaran'] + 1}}<br>
+                    Panitia PPDB TA.<br>
                     SMK Muhammadiyah Kandanghaur
                 </td>
             </tr>
@@ -143,10 +168,22 @@
             </tr>
         </table>
     </div>
-@empty
-@endforelse
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+@endsection
+@section('script')
 <script>
     window.print();
 </script>
-</body>
-</html>
+@endsection

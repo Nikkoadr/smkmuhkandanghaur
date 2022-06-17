@@ -33,4 +33,5 @@ Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard'
 Route::get('admin_ppdb', [PpdbController::class, 'index'])->name('admin_ppdb');
 Route::post('tambah_peserta_didik_baru_login', [PpdbController::class, 'store'])->name('tambah_peserta_didik_baru_login');
 Route::put('edit_peserta_didik_baru/{id}', [PpdbController::class, 'update']);
+Route::get('print_peserta_didik_baru', [PpdbController::class, 'print']);
 Route::get('hapus_peserta_didik_baru/{id}', [PpdbController::class, 'destroy']);

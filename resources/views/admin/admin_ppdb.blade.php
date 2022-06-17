@@ -102,6 +102,7 @@
                             <button style="margin-right: 2px" class="btn btn-primary"><i class="fa-solid fa-pen-to-square" data-toggle="modal" data-target="#edit-{{ $data->id }}"></i></button> 
                             @include('component.modal.form_edit')
                             <a href="hapus_peserta_didik_baru/{{ $data->id }}" class="btn btn-danger konfirmasi"><i class="fa-solid fa-trash-can"></i></a>
+                            <a href="print_peserta_didik_baru" class="btn btn-success"><i class="fa-solid fa-print"></i></a>
                         </div>
                     </td>
                   </tr>
