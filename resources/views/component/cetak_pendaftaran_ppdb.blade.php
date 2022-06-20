@@ -2,7 +2,6 @@
 @section('head')
     <link rel="stylesheet" href="{{ asset('css/cetak.min.css') }}">
     <style>
- 
         ol > li{
             padding:5px 10px;
         }
