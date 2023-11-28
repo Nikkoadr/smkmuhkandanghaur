@@ -86,9 +86,16 @@
                     <h1 class="mb-0">SMK Muhammadiyah Kandanghaur</h1>
                 </div>
                 <p style="font-weight: bold;">Visi</p>
-                <p class="mb-4">Menjadikan sekolah unggulan sebagai tempat pendidikan, pelatihan kejuruan yang memenuhi standar internasional tahun 2022 dan bernuansa islam.</p>
+                <p class="mb-4">Bergerak Maju Menjadi Yang Terdepan</p>
                 <p style="font-weight: bold;">Misi</p>
-                <p class="mb-4">Menyelenggarakan pendidikan menengah kejuruan teknologi secara profesional untuk membentuk tamatan yang berkependidikan, bertqwa serta berkompeten di bidangnya sesuai dengan kebutuhan dunia usaha, industri dan melanjutkan pendidikan tinggi</p>
+                <p>Mengembangkan ilmu pengetahuan dan penguasaan teknologi berdasarkan minat, bakat serta potensi peserta didik di lingkungan sekolah dan masyarakat.</p>
+                <p>meningkatkan mutu lulusan untuk bekerja, berwirausaha dan melanjutkan pendidikan yang lebih tinggi.</p>
+                <p>Mengamalkan nilai-nilai keagamaan dalam kehidupan sehari-hari di sekolah, keluarga dan masyarakat.</p>
+                <p>Meningkatkan kesadaran warga sekolah dalam upaya melestarikan lingkungan hidup.</p>
+                <p>Meningkatkan kompetensi peserta didik dalam penguasaan/peningkatan ilmu pengetahuan serta teknologi yang berwawasan regional, nasional dan global serta peduli dan berbudaya lingkungan.</p>
+                <p>Menjalankan pelayanan yang terbaik.</p>
+                <p>menumbuhkan serta mewujudkan jiwa patriotis dan nasionalis.</p>
+
                 <div class="row g-0 mb-3">
                     <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                         <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Pusat Keunggulan</h5>
