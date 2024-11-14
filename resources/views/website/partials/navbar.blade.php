@@ -32,8 +32,11 @@
                 <a class="nav-link" href="https://ppdb.smkmuhkandanghaur.sch.id/">PPDB</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://tracerstudy.kemdikbud.go.id/">TRACERSTUDY</a>
+                <a class="nav-link" href="https://bkk.smkmuhkandanghaur.sch.id/">BKK</a>
             </li>
+            {{-- <li class="nav-item">
+                <a class="nav-link" href="https://tracerstudy.kemdikbud.go.id/">TRACERSTUDY</a>
+            </li> --}}
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">MANAGE</a>
                 <div class="dropdown-menu m-0">
