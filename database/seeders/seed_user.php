@@ -18,7 +18,7 @@ class seed_user extends Seeder
         User::create([
             'name' => 'Administrator',
             'email' => 'admin@smkmuhkandanghaur.sch.id',
-            'password' => Hash::make('P4ssw0rd'),
+            'password' => Hash::make('Secret123'),
         ]);
     }
 }
